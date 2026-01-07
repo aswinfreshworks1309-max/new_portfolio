@@ -374,6 +374,52 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        
+ /* ===== PROJECT BUTTONS (THEME MATCHED) ===== */
+
+.btn-div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.project-btn {
+    flex: 1;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+    color: var(--bg-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    cursor: none;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 25px rgba(34, 211, 238, 0.35);
+}
+
+.project-btn i {
+    font-size: 1.1rem;
+}
+
+/* Hover Animation */
+.project-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 20px 45px rgba(34, 211, 238, 0.6);
+}
+
+/* GitHub Button */
+.project-btn.github {
+    background: linear-gradient(135deg, #0f172a, #334155);
+}
+
+/* Live Website Button */
+.project-btn.live {
+    background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+}
 
         /* Footer */
         footer {
@@ -566,41 +612,82 @@
             
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1000&auto=format&fit=crop" alt="Portfolio" class="project-image">
+                    <img src="./assets/e-comerce.png" alt="Portfolio" class="project-image">
                 </div>
-                <h3 class="project-title">Animated Portfolio 2026</h3>
-                <p class="project-desc">A glassmorphism-inspired personal website featuring advanced cursor interactions, theme toggling, and scroll animations.</p>
+                <h3 class="project-title">E-Commerce Static website</h3>
+                 
                 <div class="project-tags">
                     <span class="tag">HTML5</span>
                     <span class="tag">CSS3</span>
-                    <span class="tag">JavaScript</span>
+               
                 </div>
+             <div class="btn-div">
+    <button class="project-btn live"
+    style="margin-top: 40px;"
+        onclick="window.open('https://github.com/aswinfreshworks1309-max/E--Commerce.git','_blank')">
+        <i class="fab fa-github"></i> GitHub
+    </button>
+
+    <button class="project-btn live"
+    style="margin-top: 40px;"
+        onclick="window.open('https://e-commerce-gamma-one-spes3qccin.vercel.app/','_blank')">
+        <i class="fas fa-globe"></i> Live
+    </button>
+</div>
+
             </div>
 
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop" alt="Bus Booking" class="project-image">
+                    <img src="./assets/bus.png" alt="Bus Booking" class="project-image">
                 </div>
-                <h3 class="project-title">LocoTranz Booking</h3>
-                <p class="project-desc">Full-stack bus ticket booking platform with real-time seat selection, admin dashboard, and payment gateway integration.</p>
+                <h3 class="project-title">Bus Ticket Booking website</h3>
+               
                 <div class="project-tags">
-                    <span class="tag">React</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
                     <span class="tag">FastAPI</span>
                     <span class="tag">PostgreSQL</span>
                 </div>
+            <div class="btn-div">
+    <button class="project-btn live"
+        onclick="window.open('https://github.com/aswinfreshworks1309-max/Full_Stack_Project.git','_blank')">
+        <i class="fab fa-github"></i> GitHub
+    </button>
+
+    <button class="project-btn live"
+    onclick="window.open('https://locotranz-git-main-aswins-projects-7ca69fa9.vercel.app/','_blank')">
+        <i class="fas fa-globe"></i> Live
+    </button>
+</div>
+
             </div>
 
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1000&auto=format&fit=crop" alt="Animation Lib" class="project-image">
+                    <img src="./assets/text.png" alt="Animation Lib" class="project-image">
                 </div>
-                <h3 class="project-title">Creative JS Library</h3>
-                <p class="project-desc">A lightweight JavaScript library for creating particle systems and 3D hover effects optimized for 60fps performance.</p>
+                <h3 class="project-title">Text to Voice Converter</h3>
                 <div class="project-tags">
-                    <span class="tag">Vanilla JS</span>
-                    <span class="tag">Canvas API</span>
-                    <span class="tag">Performance</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
                 </div>
+           <div class="btn-div">
+    <button class="project-btn live"
+    style="margin-top: 40px;"
+        onclick="window.open('https://github.com/aswinfreshworks1309-max/Voice_Commander.git','_blank')">
+        <i class="fab fa-github"></i> GitHub
+    </button>
+
+    <button class="project-btn live"
+    style="margin-top: 40px;"
+        onclick="window.open(' https://aswinfreshworks1309-max.github.io/Voice_Commander/','_blank')">
+        <i class="fas fa-globe"></i> Live
+    </button>
+</div>
+
             </div>
 
         </div>
@@ -610,9 +697,8 @@
         <h3>Let's Build Something Amazing</h3>
         <p>aswin@example.com | Chennai, Tamil Nadu, India</p>
         <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="www.linkedin.com/in/aswin-aswin-6a3a82395"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aswinfreshworks1309-max"><i class="fab fa-github"></i></a>
         </div>
         <p style="margin-top: 2rem; opacity: 0.8;">© 2026 Aswin | Crafted with ❤️ and Code</p>
     </footer>
